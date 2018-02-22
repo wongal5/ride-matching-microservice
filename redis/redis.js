@@ -22,6 +22,7 @@ module.exports = {
     return lrangeAsync(driverId, 0, 9);
   },
   updateStats : (driverId, driverStats) => {
+    // push updated ride information to redis, then trim to 10 most recent
     return lpushAsync(driverId, ...driverStats)
       .then(() => {
         return ltrimAsync(driverId, 0, 9);
