@@ -2,13 +2,12 @@
 Match ride requests to the nearest available driver. Designed for maximal efficiency and RPS served.
 
 ### Tech Stack:
-- Node
-- Koa
+- Koa-backed Node server
 - Cassandra
 - Redis
 - Docker Compose
-- AWS ELB, ECS, EC2, SQS
-- Jest
+- Deployed using AWS ELB, ECS, EC2, SQS
+- Jest (TDD and Code Coverage)
 
 ## Architecture
 
